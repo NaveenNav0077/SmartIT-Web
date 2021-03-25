@@ -1,0 +1,145 @@
+.services{
+    height: 70vh;
+    background: url('../../asserts/img-2.jpg') no-repeat center center fixed;
+    -moz-background-size: cover ;
+    background-size: cover;
+    clip-path: polygon(0% 10%, 70% 0%, 100% 9%, 100% 100%, 0% 100%);
+    padding: 150px;
+    
+    &__text{
+        &__h1{
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        &__p{
+            font-size: 17px;
+            font-family: 'Sora' , sans-serif;
+            font-weight: 600;
+        }
+    }
+
+    &__fields{
+        margin: 10px 10px;
+        padding-top: 50px;
+        width: 70%;
+        color: #363636;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__circle{
+            margin-right: 10px;
+
+            &__icon{
+                height: 120px;
+                padding: 30px;
+                background-color: white;
+                clip-path: circle(40%);
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            
+        }
+
+        @media screen and (max-width:1008px){
+            width: 100%;
+            margin: 10px 0px;
+        }
+    }
+
+     
+    &__btn{
+        background-color:#FF7445;
+        height: 40px;
+        width: 240px;
+        border-radius: 999px;
+        margin-top: 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: white;
+        font-family: 'Sora' , sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        transition: all .3s ease-in-out;
+    }
+
+    &__btn:hover{
+        background-color:white;
+        color: #FF7445;
+        transition: all .3s ease-in-out;
+        font-size: 15px;
+        font-weight: 800;
+        border: #FF7445 1px solid;
+    }
+
+    @media screen and (max-width:1408px){
+        height: 70vh;
+    }
+
+    @media screen and (max-width:1008px){
+        height: 70vh;
+    }
+
+    @media screen and (max-width:828px){
+        clip-path: polygon(0% 7%, 70% 0%, 100% 5%, 100% 100%, 0% 100%);
+        padding: 60px 20px;
+        height: 140vh;
+
+        &__text{
+            padding-top: 100px;
+            &__h1{
+                font-size: 30px;
+                font-weight: 500;
+            }
+    
+            &__p{
+                font-size: 12px;
+                font-family: 'Sora' , sans-serif;
+                font-weight: 700;
+            }
+        }
+
+        &__fields{
+            margin: 10px 10px;
+            padding-top: 20px;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            &__circle{
+                padding: 20px 30px;
+
+                &__icon{
+                    height: 80px;
+                    padding: 20px;
+
+                }
+            }
+        }
+
+        &__btn{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+
+    
+    @media screen and (max-width:700px) {
+        height:190vh;
+
+        &__btn{
+            margin-left: auto;
+        }
+    }
+}

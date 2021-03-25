@@ -1,0 +1,64 @@
+.about{
+    height: 90vh;
+    background: linear-gradient(135deg,rgba(52, 232, 158,0.9),rgba(15, 52, 67,0.9));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: -100px;
+
+    &__text{
+
+        &__h1{
+            color: white;
+            font-family: 'Sora' , sans-serif;
+            font-weight: 600;
+        }
+
+        &__p{
+            color: white;
+            font-family: 'Sora' , sans-serif;
+            font-weight: 500;
+        }
+        
+        &__btn{
+            background-color:#FF7445;
+            height: 40px;
+            width: 180px;
+            border-radius: 999px;
+            margin-top: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 28%;
+
+            color: white;
+            font-family: 'Sora' , sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            transition: all .3s ease-in-out;
+
+            @media screen and (max-width:768px) {
+                margin-left: 25%;
+            }
+        }
+
+        &__btn:hover{
+            background-color:white;
+            color: #FF7445;
+            transition: all .3s ease-in-out;
+            font-size: 12px;
+            font-weight: 800;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        background: linear-gradient(135deg,rgba(52, 232, 158,0.9),rgba(15, 52, 67,0.9)),
+        url('https://i.pinimg.com/736x/88/60/10/886010642b3af3a241a6bea95b994d49.jpg');
+    }
+}

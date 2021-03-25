@@ -1,0 +1,50 @@
+.products{
+    min-height: 130vh;
+    height: auto;
+    z-index: 1;
+    background: linear-gradient(135deg,rgba(52, 232, 158,0.9),rgba(15, 52, 67,0.9));
+    clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
+    margin-top: -140px;
+
+    &__text{
+
+        &__h1{
+            color: white;
+            padding-top: 150px;
+            text-align: center;
+        }
+    }
+
+    &__cards{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: wrap;
+        align-items: center;
+        text-align: center;
+
+        &__card{
+            min-width: 250px;
+            margin-right: 20px;
+            margin-top: 20px;
+
+            &__img{
+                height: 500px;
+                width: 250px;
+                padding: 10px;
+                object-fit: contain;
+            }
+
+        }
+    }
+
+    @media screen and (max-width:1150px) and (min-width:500px){
+        margin-top: -200px;
+        height: 200vh;
+    }
+
+    @media screen and (max-width:550px) {
+        height: 400vh;
+        margin-top: -180px;
+        clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+    }
+} 
